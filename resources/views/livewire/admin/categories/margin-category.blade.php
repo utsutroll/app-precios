@@ -1,6 +1,6 @@
 <div>
     <div wire:loading>
-        <div class="loader-wrapper la-ball-clip-rotate-pulse la-dark la-2x">
+        <div id="loader-wrapper" class="la-ball-clip-rotate-pulse la-dark la-2x">
             <div></div>
             <div></div>
         </div>
