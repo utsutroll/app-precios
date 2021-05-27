@@ -28,7 +28,7 @@ class MarginCategory extends Component
     {
 
         $categories = Category::where('name', 'LIKE', "%{$this->search}%")
-                            ->paginate(10);
+                            ->paginate(5);
 
         return view('livewire.admin.categories.margin-category', compact('categories'));
     }
@@ -42,20 +42,21 @@ class MarginCategory extends Component
 
     public function update($id)
     {
-        $categories = Category::find($id);
+        $category = Category::find($id);
 
         $this->validate([
             'margin' => "required",  
             'tasa' => "required",  
         ]);
 
-        $categories->update([
+        $category->update([
             'margin' => $this->margin,
             'tasa' => $this->tasa
 
         ]);
 
         $this->reset(['margin']);
+        $this->reset(['tasa']);
 
     }
 }

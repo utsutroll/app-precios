@@ -1,4 +1,11 @@
 <div>
+    <div wire:loading>
+        <div  id="loader-wrapper" class="la-ball-clip-rotate-pulse la-dark la-2x">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-4 px-4 sm:px-4 lg:px-6 flex">
             <p class="text-xl font-bold text-gray-900 flex-1 justify-self-start">

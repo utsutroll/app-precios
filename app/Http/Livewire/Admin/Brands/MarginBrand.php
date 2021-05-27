@@ -28,8 +28,7 @@ class MarginBrand extends Component
     public function render()
     {
         $brands = Brand::where('name', 'LIKE', "%{$this->search}%")
-                            ->where('id', $this->brand)
-                            ->paginate(10);
+                            ->paginate(5);
 
         return view('livewire.admin.brands.margin-brand', compact('brands'));
     }
@@ -38,7 +37,6 @@ class MarginBrand extends Component
 
         $this->search = '';
         $this->page = 1;
-        $this->entries = '5';
 
     }
 
