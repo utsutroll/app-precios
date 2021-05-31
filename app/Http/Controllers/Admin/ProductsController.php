@@ -33,7 +33,7 @@ class ProductsController extends Controller
         
         $pdf = PDF::loadView('exports.products-prices', compact('products'))->setPaper('a4', 'landscape');
 
-        return $pdf->donwload('Lisdado-Precio-de-Productos.pdf');
+        return $pdf->download('Lisdado-Precio-de-Productos.pdf');
     }
 
     public function exportExcel()
