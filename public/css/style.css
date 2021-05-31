@@ -228,3 +228,33 @@
                  transform: translate(-50%, -50%) scale(.15);
      }
  }
+
+ .containers:hover input ~ .checkmark {
+    background-color: #a0aec0;
+  }
+  
+  .containers input:checked ~ .checkmark {
+    background-color: #0078d4;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .containers input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .containers .checkmark:after {
+    left: 9px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
