@@ -12,7 +12,7 @@ class ProductsExport implements FromView, ShouldAutoSize
 
     public function view(): View
     {
-        return view('exports.products-prices', [
+        return view('exports.products-prices-excel', [
             'products' => Product::all()
         ]);
     }

@@ -88,11 +88,11 @@
                         <div class="flex-3">
                             <div class="mb-3">
                                 <label class="ml-3">Actualizar Margen</label>
-                                <input type="number" min="1" wire:model.defer="margin" class="appearance-none rounded-0 relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-full focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm">
+                                <input type="number" min="1" wire:model.defer="margin" class="appearance-none rounded-0 block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-full focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm">
                             </div>
                             <div>
                                 <label class="ml-3">Actualizar Tasa del Dolar</label>
-                                <input type="number" min="1" wire:model.defer="tasa" class="appearance-none rounded-0 relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-full focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm">
+                                <input type="number" min="1" wire:model.defer="tasa" class="appearance-none rounded-0 block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-full focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm">
                             </div>
                             
                         </div>
