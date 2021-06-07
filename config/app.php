@@ -54,7 +54,7 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
-    'asset_url' => env('ASSET_URL', null),
+    'asset_url' => env('https://limitless-river-45249.herokuapp.com/'),
 
     /*
     |--------------------------------------------------------------------------
